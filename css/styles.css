@@ -1,0 +1,131 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 375px;
+    font-family: 'Red Hat Display', sans-serif;
+    text-align: center;
+    margin: 0;
+    background-color: hsl(225, 100%, 98%);
+    background-image: url("/images/pattern-background-mobile.svg");
+    background-repeat: no-repeat;
+}
+
+h2 {
+    color: rgb(61, 61, 61);
+    font-weight: 900;
+}
+p {
+    font-size: 15px;
+    color: rgb(101, 101, 101);
+    margin: 0 0 25px 0;
+    line-height: 25px;
+}
+
+h4 {
+    margin: 0;
+}
+
+a:hover {
+    color:  hsl(224, 23%, 55%);
+    text-decoration: none;
+}
+
+a {
+    font-size: 14px;
+}
+
+.price {
+    margin: 0;
+    padding: 5px;
+}
+
+.cancel {
+    margin: 0 0 25px 0;
+    color: rgb(101, 101, 101);
+}
+
+.cancel:hover {
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+}
+
+.container {
+    width: 90%;
+    border-radius: 20px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 5px 10px rgb(227, 227, 227);
+}
+
+.cover-image {
+    width: 100%;
+    border: solid 2pd red;
+    border-radius: 20px 20px 0 0;
+}
+
+.information {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.information .plan-tag {
+    width: 100%;
+    height: 90px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(249, 249, 249);
+    border-radius: 12px;
+}
+
+.information .plan-tag .plan {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.btn:hover {
+    background-color: hsl(224, 23%, 55%);
+}
+
+.btn {
+    border-style: none;
+    border-radius: 12px;
+    width: 100%;
+    padding: 15px;
+    margin: 25px 0 25px 0;
+    background-color: hsl(245, 75%, 52%);
+    box-shadow: 0px 5px 10px rgb(227, 227, 227);
+    color: white;
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+
+@media (min-width: 1440px) {
+    body {
+        width: 1440px;
+        background-image: url("/images/pattern-background-desktop.svg");
+    }
+
+    .container {
+        width: 25%;
+    }
+
+    .information .plan-tag {
+        width: 90%;
+    }
+
+    .btn {
+        width: 90%;
+    }
+}
