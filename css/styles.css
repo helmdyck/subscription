@@ -3,7 +3,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    width: 375px;
+    width: 100%;
     font-family: 'Red Hat Display', sans-serif;
     text-align: center;
     margin: 0;
@@ -52,7 +52,7 @@ a {
 }
 
 .container {
-    width: 90%;
+    width: 337px;
     border-radius: 20px;
     background-color: white;
     display: flex;
