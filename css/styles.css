@@ -43,11 +43,12 @@ a {
 
 .cancel {
     margin: 0 0 25px 0;
-    color: rgb(101, 101, 101);
+    color: hsl(245, 75%, 52%);
+    text-decoration: none;
 }
 
 .cancel:hover {
-    color: rgb(0, 0, 0);
+    color: hsl(245, 75%, 52%);
     font-weight: 500;
 }
 
@@ -111,21 +112,31 @@ a {
 }
 
 
-@media (min-width: 1440px) {
+@media (min-width: 576px) {
+    .container {
+        width: 70%
+    }
+}
+
+@media(min-width: 768px) {
+    .container {
+        width: 50%;
+    }
+}
+
+@media (min-width: 992px) {
     body {
-        width: 1440px;
         background-image: url("/images/pattern-background-desktop.svg");
     }
 
     .container {
+        width: 35%;
+    }
+
+}
+
+@media(min-width: 1400px) {
+    .container {
         width: 25%;
-    }
-
-    .information .plan-tag {
-        width: 90%;
-    }
-
-    .btn {
-        width: 90%;
     }
 }
